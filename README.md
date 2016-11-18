@@ -4,3 +4,4 @@
 - Day 2: Being Codecademy tutorial.
 - Day 3: Working on Codecademy tutorial.
 - Day 4: Codecademy continued...
+- Day 5: Codecademy finish!
