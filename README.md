@@ -6,4 +6,5 @@
 - Day 4: Codecademy continued...
 - Day 5: Codecademy finish!
 - Day 6: Got first PHP file to show up...started looking into connecting it to PostgreSQL.
-- Day 7: Start PHP with MySQL Essential Training on Lynda.com 
+- Day 7: Start PHP with MySQL Essential Training on Lynda.com
+- Day 8: Training countinued...
