@@ -5,7 +5,7 @@
 <h1>Sugi Keith Photography</h1>
 
 <?php
-echo "Welcome";
+echo "Happy Thanksgiving!";
 ?>
 
 </body>
