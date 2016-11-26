@@ -11,3 +11,4 @@
 - Day 9: History of PHP, started with Apache, got exercise files.
 - Day 10: Thanksgiving holiday! Looked at PHP for a bit, but enjoyed most of the holiday!
 - Day 11: Continuing videos...they are long!!
+- Day 12: looking into using php to do image carousel
