@@ -13,3 +13,5 @@
 - Day 11: Continuing videos...they are long!!
 - Day 12: looking into using php to do image carousel
 - Day 13: continued...
+- Day 14: Oops, missed this one
+- Day 15: Research github for similar projects
