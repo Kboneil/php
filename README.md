@@ -15,3 +15,4 @@
 - Day 13: continued...
 - Day 14: Oops, missed this one
 - Day 15: Research github for similar projects
+- Day 16: Code school has PHP now!!!
