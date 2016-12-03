@@ -18,3 +18,4 @@
 - Day 16: Code school has PHP now!!!
 - Day 17: Start Code school
 - Day 18: History of PHP from Code School
+- Day 19: Working on level 2
