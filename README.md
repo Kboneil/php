@@ -20,3 +20,4 @@
 - Day 18: History of PHP from Code School
 - Day 19: Working on level 2
 - Day 20: Working on my final presentation...
+- Day 21: level 2.4
