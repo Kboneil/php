@@ -23,3 +23,4 @@
 - Day 21: level 2.4
 - Day 22: Continue code school...
 - Day 23: Researching DB and composer
+- Day 24: DB connected!
