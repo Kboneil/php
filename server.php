@@ -36,7 +36,7 @@ echo $email;
 echo "<br>";
 echo $comment;
 
-require 'vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
+require 'library/PHPMailerAutoload.php';
 
 //send email from form
 $mail = new PHPMailer;
