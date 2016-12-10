@@ -5,18 +5,18 @@
 
   <nav>
     <ul class="links">
-        <li><a href="public/index.php">Featured Photos</a></li>
+        <li><a href="index.php">Featured Photos</a></li>
         <!-- <li><a href="albums.html">Albums</a></li>
         <li><a href="about.html">About</a></li> -->
-        <li><a href="public/contact.php">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
     </ul></div>
   </nav>
 
   <?php
-  include_once('../server.php');
+  include_once('../include/connect.php');
   ?>
 
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+  <form method="post" action="../include/mailer.php">
   Name: <input type="text" name="name">
   <br><br>
   E-mail: <input type="text" name="email">

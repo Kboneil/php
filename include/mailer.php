@@ -1,18 +1,6 @@
 <?php
 
-// $db = new PDO('pgsql:dbname=slogans;host=localhost;user=kboneil');
-//
-// $res = $db->query(  "SELECT * FROM comments" )->fetchAll(PDO::FETCH_ASSOC);
-//
-// if (!$res) {
-//
-//     die("Error in query: " . pg_last_error());
-//
-// }
-//
-// echo $res;
-
-//form post
+require("connect.php");
 
 $name = $email = $comment = "";
 
@@ -29,14 +17,9 @@ function test_input($data) {
   return $data;
 }
 
-echo "<h2>Form:</h2>";
-echo $name;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $comment;
+echo "<h2>Thank you, $name at $email. Your comment $comment has been sent.</h2>";
 
-require 'library/PHPMailerAutoload.php';
+require '../vendor/phpmailer/phpmailer/PHPMailerAutoload.php';
 
 //send email from form
 $mail = new PHPMailer;
@@ -65,35 +48,6 @@ if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
     echo 'Message has been sent';
-}
-
-
-//connect to DB
-$db = pg_connect("host=localhost dbname=slogans user=kboneil");
-if (!$db) {
-
-    die("Error in connection: " . pg_last_error());
-
-}
-
-$sql = "SELECT * FROM slogans";
-
-$res = pg_query($db, $sql);
-
-if (!$res) {
-
-    die("Error in query: " . pg_last_error());
-
-}
-
-while ($row = pg_fetch_array($res)) {
-
-    echo "Slogan: " . $row[0] . "<p />";
-
-    echo $row[1] . "<p />";
-
-    echo $row[2] . "<p />";
-
 }
 
 ?>

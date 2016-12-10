@@ -5,18 +5,36 @@
 
   <nav>
     <ul class="links">
-        <li><a href="public/index.php">Featured Photos</a></li>
+        <li><a href="index.php">Featured Photos</a></li>
         <!-- <li><a href="albums.html">Albums</a></li>
         <li><a href="about.html">About</a></li> -->
-        <li><a href="public/contact.php">Contact</a></li>
+        <li><a href="contact.php">Contact</a></li>
     </ul></div>
   </nav>
 
 <h1>Sugi Keith Photography</h1>
 
 <?php
-include_once('../server.php');
+include_once('../include/connect.php');
 $sql = "SELECT * FROM slogans";
+
+$res = pg_query($db, $sql);
+
+if (!$res) {
+
+    die("Error in query: " . pg_last_error());
+
+}
+
+while ($row = pg_fetch_array($res)) {
+
+    echo "Slogan: " . $row[0] . "<p />";
+
+    echo $row[1] . "<p />";
+
+    echo $row[2] . "<p />";
+
+}
 ?>
 <!-- <div class="imageSlide">
         <ul class="images" id="slides">
