@@ -35,12 +35,17 @@ while ($row = pg_fetch_array($res)) {
     echo $row[2] . "<p />";
 
 }
+
 ?>
 <div class="imageSlide">
         <ul class="images" id="slides">
           <li class="mySlides">
             <figure><img src="https://unsplash.it/200/300/?random" alt="Wanderer"/></figure>
             <figcaption>Effects of Time</figcaption>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            Comment: <input type="text" name="name">
+              <input type="submit" name="submit" value="Submit">
+            </form>
           </li>
           <li class="mySlides">
             <figure><img src="https://unsplash.it/200/300/?random" alt="Wanderer"/></figure>
@@ -80,6 +85,18 @@ while ($row = pg_fetch_array($res)) {
           </li>
         </ul>
       </div>
+
+      <?php
+
+      $query = "INSERT INTO comments VALUES ('$_POST[comment]')";
+      $res = pg_query($query);
+
+      if (!$res) {
+
+          die("Error in query: " . pg_last_error());
+
+      }
+      ?>
 
 </body>
 

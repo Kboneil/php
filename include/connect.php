@@ -13,7 +13,7 @@
 // echo $res;
 
 //connect to DB
-$db = pg_connect("host=localhost dbname=slogans user=kboneil");
+$db = pg_connect("host=localhost dbname=kboneil user=kboneil");
 if (!$db) {
 
     die("Error in connection: " . pg_last_error());
