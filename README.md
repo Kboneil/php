@@ -26,3 +26,5 @@
 - Day 24: DB connected!
 - Day 25: Form submission working, sends email using PHPMailer
 - Day 26: Looking at XOAUTH2 and how to navigate between pages
+- Day 27: Change file structure
+- Day 28: More research
