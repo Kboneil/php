@@ -37,12 +37,13 @@ while ($row = pg_fetch_array($res)) {
 }
 
 ?>
+
 <div class="imageSlide">
         <ul class="images" id="slides">
           <li class="mySlides">
             <figure><img src="https://unsplash.it/200/300/?random" alt="Wanderer"/></figure>
             <figcaption>Effects of Time</figcaption>
-            <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+            <form method="post" action="index.php">
             Comment: <input type="text" name="name">
               <input type="submit" name="submit" value="Submit">
             </form>
