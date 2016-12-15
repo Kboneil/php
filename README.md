@@ -29,4 +29,4 @@
 - Day 27: Change file structure
 - Day 28: More research
 - Day 29: Working on post request
-- Day 30:
+- Day 30: Final day!
